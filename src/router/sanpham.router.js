@@ -7,6 +7,7 @@ const router = express.Router();
 router.get('/balo',SanPhamController.getAllBalo)
 router.get('/jacket',SanPhamController.getAllJacket)
 router.get('/tee',SanPhamController.getAllTee)
+router.get('/:id',SanPhamController.getSanPhamByID)
 router.get('/',SanPhamController.getAllProduct)
 
 module.exports = router;
